@@ -12,7 +12,7 @@ A RESTful API built with Node.js, Express, and MongoDB.
 - Dotenv
 
 ## Project Structure
-src/
+ src/
 ├── config/
 │   ├── db.js
 │   ├── env.js
@@ -24,6 +24,7 @@ src/
 ├── models/
 │   └── product.model.js
 ├── routes/
+│   ├── index.js
 │   └── product.routes.js
 ├── seeders/
 │   └── product.seeder.js
@@ -46,7 +47,7 @@ npm install
 ### 3. Setup environment variables
 Create a `.env` file in root directory:
 
-PORT=3000
+PORT=5000
 MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/dbname
 
 ### 4. Seed the database
