@@ -1,12 +1,12 @@
 import express from 'express'
 import errorHandler from './middleware/errorHandler.js'
+import routes from './routes/index.js'
 
 const app = express()
 
 app.use(express.json())
 
-// Routes yahan aayenge
-// app.use('/api/...', ...)
+app.use('/api/v1', routes);
 
 app.use(errorHandler)
 
