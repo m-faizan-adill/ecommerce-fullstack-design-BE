@@ -50,8 +50,10 @@ npm install
 ### 3. Setup environment variables
 Create a `.env` file in root directory:
 
+```
 PORT=5000
 MONGO_URI=mongodb+srv://username:password@cluster.mongodb.net/dbname
+```
 
 ### 4. Seed the database
 ```bash
