@@ -1,9 +1,13 @@
 import express from 'express'
-import { PORT } from './config/env.js'
-import connectDB from './config/db.js'
+import errorHandler from './middleware/errorHandler.js'
 
 const app = express()
 
-connectDB()
+app.use(express.json())
 
-export default app;
+// Routes yahan aayenge
+// app.use('/api/...', ...)
+
+app.use(errorHandler)
+
+export default app
