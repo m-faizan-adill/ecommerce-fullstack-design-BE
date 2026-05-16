@@ -1,15 +1,16 @@
-import logger from "../config/logger.js"
+import logger from '../config/logger.js'
 
 const errorHandler = (err, req, res, next) => {
-    const statusCode = err.statusCode || 500
-    const message = err.message || 'Internal Server Error'
+  const statusCode = err.statusCode || 500
+  const message = err.message || 'Internal Server Error'
+  const context = err.context || 'Unknown Function'
 
-    logger.error(`${statusCode} - ${message}`)
+  logger.error(`[${context}] ${statusCode} - ${message}`)
 
-    res.status(statusCode).json({
-        success: false,
-        message
-    })
+  res.status(statusCode).json({
+    success: false,
+    message
+  })
 }
 
 export default errorHandler
