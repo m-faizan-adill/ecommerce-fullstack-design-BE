@@ -12,7 +12,9 @@ A RESTful API built with Node.js, Express, and MongoDB.
 - Dotenv
 
 ## Project Structure
- src/
+
+```
+src/
 ├── config/
 │   ├── db.js
 │   ├── env.js
@@ -30,6 +32,7 @@ A RESTful API built with Node.js, Express, and MongoDB.
 │   └── product.seeder.js
 ├── index.js
 └── server.js
+```
 
 ## Getting Started
 
