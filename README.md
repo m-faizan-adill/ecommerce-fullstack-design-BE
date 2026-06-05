@@ -75,11 +75,11 @@ npm start
 
 | Method | Endpoint | Description |
 |--------|----------|-------------|
-| GET | `/api/products` | Get all products |
-| GET | `/api/products/:id` | Get single product |
-| POST | `/api/products` | Create a product |
-| PUT | `/api/products/:id` | Update a product |
-| DELETE | `/api/products/:id` | Delete a product |
+| GET | `/api/v1/products` | Get all products |
+| GET | `/api/v1/products/:id` | Get single product |
+| POST | `/api/v1/products` | Create a product |
+| PUT | `/api/v1/products/:id` | Update a product |
+| DELETE | `/api/v1/products/:id` | Delete a product |
 
 ## Product Schema
 
